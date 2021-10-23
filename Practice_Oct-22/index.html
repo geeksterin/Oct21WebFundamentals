@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        p {
+            display: none;
+        }
+
+        div:hover p {
+            display: block;
+        }
+        div:hover h3 {
+            font-size: 50px;
+        }
+        h2:hover{
+            color:blue;
+        }
+        a:visited {
+            color: coral;
+        }
+        button:hover {
+            color: black;
+            opacity: 0.3; 
+        }
+        form {
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- select tag -->
+    <h2>this is my form</h2>
+    <form>
+        <label>Name</label>
+        <input type='text' name="name" placeholder="enter your name"  minlength="3" pattern="[a-Z]"/>
+        </br>
+        <label>password</label> 
+        <input type="password" minlength="8" pattern="[a-Z]"/>
+    </br>
+    <label>Email</label>
+    <input type="email" pattern=".+@gmail.com" required>
+</br>
+<label>phone number</label>
+<input type="tel" pattern="[0-9]" required minlength="10" maxlength="10">
+        <label for="selector">Select the product</label>
+        <select id="selector">
+            <option value="car">Car</option>
+            <option value="bike" selected>Bike</option>
+            <option value="bicycle">Bicycle</option>
+        </select>
+        <button>Click here to submit</button>
+    </form>
+
+    <div>
+        <a href="https://geekster.in/" target="_blank">This is a link</a>
+        <a href="https://google.com/" target="_blank">This is a link</a>
+
+        Hey guys! hover on me
+        <!-- <p>I was hovered</p>
+        <h3>I am superman</h3> -->
+    </div>
+
+</body>
+</html>
+
+<!-- Assignemnt Requirement: 
+- you need to create a survey form w.r.t your restaurant.
+- Be as creative as you can!
+-->
