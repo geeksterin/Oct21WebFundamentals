@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <link rel="stylesheet" href="index.css" />
+        <style>
+            /* p {
+                color: blue;
+            }
+            p {
+                color: red;
+            }
+            #para {
+                color: green; 
+            }
+            .para_class_2 {
+                color: black;
+            }
+            .para_class {
+                color: yellow;
+            }
+            [id="para"] {
+               color: blue; 
+            }
+            #special_button:hover {
+                color: cyan;
+            }
+            #special_button:active {
+                color: orange;
+            }
+            p::first-letter {
+                color: pink;
+            }
+            p::before {
+                content: '➡';
+            } */
+
+            /* #parent .something {
+                color: yellow;
+            } */
+
+            #parent > .something {
+                color: yellow;
+                /* font-size:  */
+            }
+
+            /* #fav_child ~ p {
+                color: coral
+            } */
+        </style>
+    </head>
+    <body>
+        <!-- <p attr="value">This is a sample text.</p>
+        <p attr="value1">This is a sample text.</p>
+        <p class="para_class_2 para_class">This is a sample text.</p>
+        <p class="para_class" id="para">This is a sample text.</p>
+        <p>This is a sample text.</p>
+        <p>This is a sample text.</p>
+        <button id="special_button">Fancy</button> -->
+    
+        <div>
+            <div id="parent">
+                <p class="something">Para 1</p>
+            </div>
+            <div>
+                <p>Para 2.1</p>
+                <p>Para 2.2</p>
+                <p id="fav_child">Para 2.3</p>
+                <p>Para 2.4</p>
+                <p>Para 2.5</p>
+                <p>Para 2.6</p>
+                <p>Para 2.7</p>
+                <p>Para 2.8</p>
+                <p id="adj">Para 2.9</p>
+            </div>
+            <div>
+                <p>Para 3</p>
+            </div>
+            <div>
+                <p>Para 4</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+    Ways to write CSS
+    1. inline
+    2. internal
+    3. external
+
+    CSS - Selector
+-------------------------
+1) id Selector
+2) Class Selector
+3) Tag Selector
+
+4) Attribute Selector
+5) pseudo Selector 
+5.1) Psuedo Classes  -> Start with :
+5.2) Pseudo Elements -> Start with ::
+👇🏻Combinators
+6)Space( )
+7)Grater than (>)
+8) plus + -> Adjacent Sibling
+9)Tilde (~) -> General Sibling
+10) Universal Selector (*)
+
+-->
