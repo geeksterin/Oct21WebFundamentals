@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            #old_special {
+                padding: 15px;
+                height: 50px;
+                width: 50px;
+                background-color: #ABABAB;
+
+                border-style: solid;
+                border-width: 8px;
+                border-color: #000000;
+                border-top-color: transparent;
+                margin: 15px;
+            }
+            button {
+                /* margin-left: 10px; */
+                padding: 15px;
+            }
+            #special {
+                height: 50px;
+                width: 50px;
+                background-color: #3EAA82;
+                padding: 30px 25px 20px 15px;
+                /* padding: 1em; */
+            }
+
+            #calculated {
+                /* width: cal(100vw - 10px); */
+                background-color: #3EAA82;
+                height: 50px;
+            }
+
+            body {
+                margin: 0px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>ABCD</p>
+        <p>ABCD</p>
+        <span>ABCD</span>
+        <span>ABCD</span>
+        <div id="old_special"><p>Box Model</p></div>
+        <button>Click Me!</button>
+        <div id="special"><p>ABCD</p></div>
+        <br />
+        <br />
+        <div id="calculated"></div>
+    </body>
+</html>
