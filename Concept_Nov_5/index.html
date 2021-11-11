@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Something JS</title>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cumque dicta doloremque obcaecati, labore dolor ab blanditiis possimus provident! Sequi animi consectetur explicabo earum temporibus sit enim a necessitatibus fugit.</p>
+        <input type="text" id="inp"/>
+        <br />
+        <button id="btn" class="btn_class">Click me</button>
+    
+        <script>
+            //console.log(document);
+            //let variable = 1;
+            //variable = 10;
+
+            //let anything = document.getElementById('btn');
+            //document.getElementsByClassName('btn_class');
+            //document.querySelector('#btn');
+            //console.log(anything);
+
+            function func() {
+                console.log('Button clicked');
+            }
+
+            function something() {
+                console.log('Input value changed');
+            }
+
+            //func -> Referring the function.
+            //func() -> Calling the function
+
+            let btn_elem = document.getElementById('btn');
+            btn_elem.addEventListener('click', func);
+            //               This is a callback 👆🏻
+            
+            let inp_var = document.getElementById('inp');
+            inp_var.addEventListener('change', something);
+            //                  This is a callback 👆🏻
+            
+            //Callback. -> Pass a function as an argument to another function which then gets called from main function.
+            
+            function abcd() {
+                console.log('ABCD Called');
+            }
+            let arr = [1, 2, 3, 4, 5];
+            arr.forEach(abcd);
+            //  Callback 👆🏻
+
+            //This is also callback 👇🏻
+            arr.forEach(function (v) {
+                console.log(v);
+            });
+
+            //For later - Further reading IIFE.
+            // (function () {
+            //     console.log('Anon');
+            // })();
+
+            // function name() {
+            //     console.log('This is a regular function');
+            //     console.log('To call this, I use name()');
+            // }
+
+            // function () {
+            //     console.log('This is an anonymous function');
+            //     console.log('Anonymous because no name');
+            //     console.log('I cannot use it just like that');
+            //     console.log('Except for callbacks and others');
+            // }
+
+            // function name(attr) {
+            //     console.log(attr);
+            // }
+            // name('ABCD');
+
+            //Arrow function
+            // a => {
+            //     console.log(a);
+            // }
+
+            //Use arrow function as regular function;
+            //By nature, they are nonymous.
+            // param => {
+            //     console.log(param);
+            // }
+            //Same as writing this. ☝🏻👇🏻
+            // function (param) {
+            //     console.log(param);
+            // }
+
+            // let func1 = abc => {
+            //     console.log(abc);
+            // };
+
+            // func1('Whatever');
+
+            //To be Done Later.
+            //Difference between Arrow function and function keyword.
+            
+            // console.log('Arrow function');
+            // arr.forEach(v => {
+            //     console.log(v);
+            // });
+
+            //
+            // Scope. { <-- Anything between these btackets --> }
+            // Block Scope -> if(){ Anything here }
+            // Functional Scope -> function() { Anything here }
+            // Class scope ->  class { Anything here } 
+            // Global Scope -> Everywhere
+
+        </script>
+    </body>
+</html>

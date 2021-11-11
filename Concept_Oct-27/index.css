@@ -1,0 +1,57 @@
+div {
+    height: 50px;
+    width: 50px;
+}
+#fixed {
+    background-color: hsl(0, 0%, 67%);
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.fixed_special {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.fixed_special:first-of-type {
+    right: 5px;
+    background-color: #FF0000;
+    /* z-index: 10; */
+    /* opacity: 0.5; */
+}
+.fixed_special:last-of-type {
+    background-color: #00FF00;
+}
+
+#super_special {
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    background-color: #0000FF;
+}
+
+#absolute {
+    background-color: #DDAADD;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+button {
+    z-index: -2;
+}
+
+#relative {
+    background-color: #FF6347;
+    position: relative;
+    top: -30px; /* Same as writing bottom: 30px */
+    left: 50px;
+}
+
+#sticky {
+    background-color: #FFFF00;
+    position: sticky;
+    top: 0px;
+}

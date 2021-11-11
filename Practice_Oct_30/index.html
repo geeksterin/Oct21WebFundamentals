@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            direction: rtl;
+        }
+        label {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            width: 130px;
+        }
+        .container label::before {
+            content: "\2605";
+            font-size: 100px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: black;
+        }
+        .container label::after {
+            content: "\2605";
+            font-size: 100px;
+            display: block;
+            color: yellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        label:hover::after,
+        /* General sibling combinator */
+        label:hover ~ label::after,
+        input:checked ~ label::after {
+            opacity: 1;
+        }
+        input {
+            display: none;
+        }
+        .apply ~ p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" id="star_1"> <label for="star_1"></label>
+        <input type="radio" id="star_2"> <label for="star_2"></label>
+        <input type="radio" id="star_3"> <label for="star_3"></label>
+        <input type="radio" id="star_4"> <label for="star_4"></label>
+        <input type="radio" id="star_5"> <label for="star_5"></label>
+    </div>
+    <!-- <div class="parent">
+        <p class="child apply">Child</p>
+        <p class="child">Child2</p>
+        <p class="child">Child2</p>
+        <p class="child">Child2</p>
+        <p class="child">Child2</p>
+        <p class="child">Child2</p>
+        <p class="child">Child2</p>
+
+    </div> -->
+</body>
+</html>
