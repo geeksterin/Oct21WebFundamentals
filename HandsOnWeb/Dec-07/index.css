@@ -1,0 +1,12 @@
+ul button {
+    margin-left: 15px;
+}
+
+@media (max-width: 700px) {
+    /* body {
+        background-color: #FF0000;
+    } */
+    #add_task_button {
+        display: none;
+    }
+}

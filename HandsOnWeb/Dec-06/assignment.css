@@ -1,0 +1,139 @@
+.m-4 {
+    margin: 4px;
+}
+
+input {
+    background: #E4E4E4;
+    line-height: 50px;
+    border-radius: 5px;
+    padding: 0 22px;
+    font-size: 2em;
+    color: #555555;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    background: #E4E4E4;
+    max-width: calc(100% - 52px);
+    width: 100%;
+    padding: 18px 22px;
+    font-size: 1em;
+    color: #555555;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
+select {
+    line-height: 50px;
+    padding: 14px 22px;
+    color: #555;
+    font-size: 1.2em;
+    font-family: inherit;
+    width: calc(50% - 10px) !important;
+    border: none;
+    border-radius: 5px;
+}
+
+.ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+}
+.roboto-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin: 0.5em 4px;
+}
+
+h5 {
+    font-size: 1em;
+    text-align: right;
+    display: inline-block !important;
+    margin: 0.5em 4px;
+    width: calc(50% - 10px) !important;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 0.5em 4px;
+}
+
+.inline {
+    display: inline;
+    width: calc(50% - 54px);
+}
+
+body {
+    background-color: #EFEFEF;
+    margin-top: 40px;
+    background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+    min-height: calc(100vh - 48px);
+}
+
+.form-container {
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #FFFFFF;
+    max-width: 50vw;
+    margin: auto;
+}
+
+.title-container {
+    background-color: #000000;
+    padding: 20px 15px 20px;
+    max-width: 50vw;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.title-container > h2 {
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+hr {
+    margin: 20px auto;
+    border: 0; 
+    border-top: 1px solid #555555;
+}
+
+input[type="submit"], input[type="reset"] {
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+input[type="submit"] {
+    background-color: #5BC0DE;
+}
+input[type="submit"]:hover {
+    background-color: #269ABC;
+}
+
+input[type="reset"] {
+    background: #FF4B5A;
+}
+
+input[type="reset"]:hover {
+    background: #EB3746;
+}
+
+div {
+    box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 15%);
+}
