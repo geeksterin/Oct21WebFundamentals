@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        margin: 100px auto;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 30px;
+      }
+    </style>
+    <script>
+      function fnCreateElement() {
+        var inputValue = document.getElementById("i1").value;
+
+        if (inputValue === "") {
+          alert("Plz enter some Text");
+          return;
+        } else {
+          //create new <p> element
+          var pRef = document.createElement("span");
+          pRef.style.color = "green";
+          pRef.style.marginRight = "10px";
+          pRef.style.marginTop = "20px";
+          pRef.append(inputValue);
+
+          var btnEdit = document.createElement("button");
+          btnEdit.style.marginRight = "10px";
+          btnEdit.style.marginTop = "20px";
+          btnEdit.innerText = "Edit";
+
+          var btnDelete = document.createElement("button");
+          btnDelete.style.marginTop = "20px";
+          btnDelete.innerText = "Delete";
+
+          var br = document.createElement("br");
+
+          document.querySelector("div").appendChild(pRef);
+          document.querySelector("div").appendChild(btnEdit);
+          document.querySelector("div").appendChild(btnDelete);
+          document.querySelector("div").appendChild(br);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      Enter Text: <input type="text" id="i1" />
+      <button onclick="fnCreateElement()">Add new Element</button><br />
+    </div>
+  </body>
+</html>

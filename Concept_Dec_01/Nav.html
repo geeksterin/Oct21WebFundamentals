@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+        body {
+            height: 3000px;
+        }
+        #BI {
+            background: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center;
+            background-size: cover;
+            height: 100vh;
+        }
+        #BC {
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+            background:rgba(0,0,0,0.7);
+            height: 100vh;
+        }
+        .bg-primary {
+            background:linear-gradient(45deg,black,darkred,black) 
+        }
+        .text-white {
+            color:cornsilk !important
+        }
+    </style>
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar navbar-dark bg-primary">
+      <div class="container">
+        <h1><a href="#" class="text-white navbar-brand">Geekster</a></h1>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="" class="text-white nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-white nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="text-white nav-link">Software Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+     <div id="BI">
+         <div id="BC" class="text-white d-flex align-items-center flex-column justify-content-center">
+           <p class="display-3">Welcome to Bootstrap</p>
+           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, sequi dolor nostrum suscipit dignissimos ipsam, dolorum accusantium vero unde mollitia eligendi quo et officia sunt deleniti facere voluptatum quae error laboriosam quidem a accusamus ratione. Maxime vel dolorem eveniet veritatis.</p>
+            <button type="button" class="btn btn-outline-primary  px-5">Primary</button>
+        </div>
+
+     </div>
+
+       <div class="container-fluid mt-5">
+           <div class="row">
+               <div class="col-4">
+                   <img class="img-fluid" src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+               </div>
+               <div class="col-8">
+                   <h3>HTML</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum neque maiores vitae nesciunt, voluptatum aliquam, aut ullam enim praesentium in ex perspiciatis natus laborum! Error, aspernatur praesentium illum possimus excepturi facere magnam mollitia cum dolorem placeat similique. Dignissimos architecto labore omnis perferendis placeat quia quibusdam illum ab distinctio sed, hic sunt alias adipisci modi, consequuntur quis deserunt non, provident fuga fugiat! Libero ratione quasi repellendus, totam dolores numquam saepe nostrum distinctio. Et odit, delectus itaque eveniet repellendus ipsa quis dolor!</p>
+               </div>
+           </div>
+            <div class="row mt-5">
+               
+               <div class="col-8">
+                   <h3>CSS</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum neque maiores vitae nesciunt, voluptatum aliquam, aut ullam enim praesentium in ex perspiciatis natus laborum! Error, aspernatur praesentium illum possimus excepturi facere magnam mollitia cum dolorem placeat similique. Dignissimos architecto labore omnis perferendis placeat quia quibusdam illum ab distinctio sed, hic sunt alias adipisci modi, consequuntur quis deserunt non, provident fuga fugiat! Libero ratione quasi repellendus, totam dolores numquam saepe nostrum distinctio. Et odit, delectus itaque eveniet repellendus ipsa quis dolor!</p>
+               </div>
+               <div class="col-4">
+                   <img class="img-fluid" src="data:image/jpeg;base64,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" />
+               </div>
+           </div>
+           <div class="row mt-5">
+               <div class="col-4">
+                   <img class="img-fluid" src="https://geekster.in/wp-content/uploads/2021/03/Land-your-dream-job-vector.png" />
+               </div>
+               <div class="col-8">
+                   <h3>Javascript</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum neque maiores vitae nesciunt, voluptatum aliquam, aut ullam enim praesentium in ex perspiciatis natus laborum! Error, aspernatur praesentium illum possimus excepturi facere magnam mollitia cum dolorem placeat similique. Dignissimos architecto labore omnis perferendis placeat quia quibusdam illum ab distinctio sed, hic sunt alias adipisci modi, consequuntur quis deserunt non, provident fuga fugiat! Libero ratione quasi repellendus, totam dolores numquam saepe nostrum distinctio. Et odit, delectus itaque eveniet repellendus ipsa quis dolor!</p>
+               </div>
+           </div>
+       </div>
+        
+  </body>
+</html>
