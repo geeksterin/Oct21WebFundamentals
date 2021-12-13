@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <img id="image" />
+    <script>
+        let a = fetch('https://meme-api.herokuapp.com/gimme');
+        let b = a.then(function(r) {
+            return r.json();
+        });
+        b.then(function(s) {
+            // console.log(s.preview[2]);
+            // s.url;
+            let img_url = s.url;
+            let i = document.getElementById('image');
+            i.src = img_url;
+        });
+    </script>
+
+</body>
+</html>
