@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <h3>Question 6</h3>
+    <input id="input" />
+    <button id="button">Check Palindrome</button>
+    <p id="output"></p>
+
+    <script>
+        let btn = document.getElementById('button');
+        btn.addEventListener('click', function() {
+            let inp = document.getElementById('input');
+            let str = inp.value;
+
+            let pal_status = checkPalindrome(str);
+
+            let op = document.getElementById('output');
+            
+            if(pal_status) {
+                op.innerText = "The given string is a palindrome";
+            } else {
+                op.innerText = "The given string in NOT a palindrime";
+            }
+
+        });
+
+        function checkPalindrome(str) {
+
+            for(let i = str.length - 1; i >= 0; i--) {
+                let char_from_last  = str.charAt(i);
+                let char_from_start = str.charAt((str.length - 1) - i);
+
+                if(char_from_last != char_from_start) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        
+
+
+        // function checkPalindrome(str) {
+        //     let reversed = ""; //Space Complexity
+        //     for(let i = str.length - 1; i >= 0; i--) {
+        //         reversed += str.charAt(i);
+        //     }
+
+        //     if(reversed == str) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+    </script>
+</body>
+</html>

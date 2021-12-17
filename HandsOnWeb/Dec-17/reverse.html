@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Reverse</title>
+</head>
+<body>
+    <h2>Question 3</h2>
+
+    <input id="input" />
+    <button id="button">Reverse the String</button>
+    <p id="output"></p>
+
+    <script>
+
+        let btn = document.getElementById('button');
+        btn.addEventListener('click', function() {
+            let inp = document.getElementById('input');
+            let str = inp.value;
+            let reveresed_str = reverseString(str);
+
+            let op = document.getElementById('output');
+            op.innerText = reveresed_str;
+        });
+
+        function reverseString(str) {
+            //TODO: Add Logic
+            let output_str = "";
+
+            for (let i = str.length - 1; i>=0; i--) {
+                let single_character = str.charAt(i);
+                // output_str = output_str + single_character;
+                output_str += single_character;
+            }
+
+            return output_str;
+        }
+
+    </script>
+
+</body>
+
+</html>
