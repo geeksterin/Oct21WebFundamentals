@@ -1,0 +1,37 @@
+/* Type selector */
+/* p {
+    color: #FF0000;
+} */
+
+/* Type selector */
+/* p {
+    color: #AABBFFFF;
+} */
+
+
+* {
+    color: #f89900;
+}
+
+
+p {
+    color: #00ff73 !important;
+}
+
+
+.abcd {
+    color: #FF3AFB !important;
+}
+
+
+#hello-peter {
+    color: #FF0000 !important;
+}
+
+/* div p {
+    color: #FF0000;
+}
+
+p {
+    color: #00FF00;
+} */

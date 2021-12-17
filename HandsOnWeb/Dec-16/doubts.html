@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Outer function
+        function outer() {
+            
+            var arr = [];
+            // let i;
+            for (var i = 0; i < 4; i++) {
+                // storing anonymous function
+                arr[i] = function () { return i; }
+            }
+ 
+            // returning the array.
+            return arr;
+        }
+ 
+        var get_arr = outer();
+
+        console.log(get_arr[0]());
+        console.log(get_arr[1]());
+        console.log(get_arr[2]());
+        console.log(get_arr[3]());
+
+        // let a = 10;
+        // {
+        //     a = 20;
+        //     console.log(a);
+        // }
+        // console.log(a);
+    </script>
+</body>
+</html>

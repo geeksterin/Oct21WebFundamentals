@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <h2>Questio 1</h2>
+
+    <input type="text" placeholder="Enter the String" id="input"/>
+    <button id="take_input">Calculate</button>
+    <p id="output"></p>
+
+
+    <script>
+        //Write a code to take an input and count the number of words in the string.
+        let btn = document.getElementById('take_input');
+        btn.addEventListener('click', function() {
+            let inp = document.getElementById('input');
+            let str = inp.value;
+            let word_count = calculate_word_count(str);
+            let p = document.getElementById('output');
+            p.innerText = word_count;
+        });
+
+        // Hello from the dark side -> 5
+        // Remember, with great power comes great responsibility -> 7 
+        // I love you 3000 -> 4
+        function calculate_word_count(str) {
+            //split -> split the given string into an array, based on the delimetter
+
+            //In order to calculate the number of words, we need to first split the string into an array of words.
+            //In order to pass a RegEx we use / <RegEx> +/
+            let word_arr = str.split(/( |,|\.)+/);
+            console.log(word_arr);
+            word_arr = word_arr.filter(function(word) {
+                if(word.trim().length > 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            
+            let word_count = word_arr.length;
+
+            console.log(word_arr);
+            return word_count;
+        }
+    </script>
+</body>
+</html>
