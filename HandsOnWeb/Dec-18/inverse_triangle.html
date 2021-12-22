@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverse Triangle</title>
+</head>
+<body>
+    <h4>Question 9 - Inverse Triangle</h4>
+    
+    <input type="number" id="input" />
+    <button id="button">Make Pattern</button>
+    <br />
+    <br />
+    <pre id="output"></pre>
+
+    <script>
+        let btn = document.getElementById('button');
+        btn.addEventListener('click', function() {
+            let inp = document.getElementById('input');
+            let num = parseInt(inp.value);
+            makePattern(num);
+        });
+
+        function makePattern(num) {
+            let n = num;
+            // for(let i=0;i<n;i++){
+            //     let str = "";
+            //     for(let j=0;j<i;j++)
+            //         // console.log(" ");
+            //         str += " ";
+            //     for(let j=i+1;j<n-i;j++){
+            //         // console.log("*");
+            //         str += "*";
+            //     }
+            //     console.log(str);
+            // }
+
+            if(num % 2 == 0) {
+                alert('Please enter odd numbers');
+                return;
+            }
+
+            let document_str = "";
+
+            for (let i = 0; i < Math.ceil(num/2); i++) {
+                let str = "";
+                for(let j = 0; j < i; j++) {
+                    str = str + " ";
+                    document_str = document_str + " ";
+                }
+                for(let j = 0; j < num-(2*i); j++) {
+                    str = str + "*";
+                    document_str = document_str + "*";
+                }
+                document_str = document_str + "\n";
+                console.log(str);
+            }
+
+            let op = document.getElementById('output');
+            op.innerText = document_str;
+
+
+            // console.log(num);
+            //console.log();
+        }
+
+    </script>
+</body>
+</html>
